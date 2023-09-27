@@ -10,8 +10,8 @@
             <a href="/admin/blogs" class="nav-link">Dashboard</a>
         @endcan
 
-        <img src="{{ auth()->user()->avatar }}" width="40" height="40" class="rounded-circle ">
-        <a href="" class="nav-link">Welcome{{ auth()->user()->name }}</a>
+        {{-- <img src="{{ auth()->user()->avatar }}" width="40" height="40" class="rounded-circle "> --}}
+        <a href="" class="nav-link">Welcome {{ auth()->user()->name }}</a>
         <form action="/logout" method="POST">
             @csrf
             <button type="submit" href="" class="nav-link btn btn-link">Logout</button>
